@@ -4,7 +4,7 @@ import Head from 'next/head'
 const Layout = ({ children, title }: { children: ReactNode, title?: string }) => (
   <>
     <Head>
-      <title>Ian Forsyth{title && ` - ${title}`}</title>
+      <title>Maple Vein{title && ` - ${title}`}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
