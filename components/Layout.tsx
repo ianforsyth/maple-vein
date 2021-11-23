@@ -1,10 +1,11 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
+import { P } from './UI'
 
 const Layout = ({ children, title }: { children: ReactNode, title?: string }) => (
   <>
     <Head>
-      <title>Maple Vein{title && ` - ${title}`}</title>
+      <title>Maple Vein Woodworking{title && ` - ${title}`}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
@@ -21,8 +22,18 @@ const Layout = ({ children, title }: { children: ReactNode, title?: string }) =>
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
     </Head>
-    <div className="flex flex-col h-full overflow-auto">
-      {children}
+    <div className="flex flex-col h-full overflow-auto justify-between">
+      <div>
+        {children}
+      </div>
+      <footer className="flex items-end justify-center p-2 mt-8">
+        <img
+          className="w-11 pb-0.5"
+          src="/boulder.svg"
+          alt="Maple Vein Woodworking"
+        />
+        <p className="text-sm text-gray leading-none ml-1 font-bold">Crafted in Boulder, CO</p>
+      </footer>
     </div>
   </>
 )
