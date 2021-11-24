@@ -8,6 +8,7 @@ module.exports = {
       primaryHover: '#2eb0b6',
       gray: '#C5C5C5',
       white: '#FFFFFF',
+      danger: 'red'
     },
     extend: {
       fontFamily: {

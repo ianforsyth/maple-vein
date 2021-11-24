@@ -11,8 +11,8 @@ export const H2 = ({ children, className }: React.HTMLProps<HTMLHeadingElement>)
 }
 
 export const A = ({ children, className, ...props }: React.HTMLProps<HTMLAnchorElement>) => {
-  const style = cn("text-primary hover:text-primaryHover", className);
-  return <a className={style} {...props} target="_blank" rel="noopener noreferrer"> {children}</a>
+  const style = cn("text-base", className);
+  return <a className={style} {...props}> {children}</a>
 }
 
 export const P = ({ children, className, ...props }: React.HTMLProps<HTMLParagraphElement>) => {
